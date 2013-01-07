@@ -21,9 +21,12 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 # Audio
 PRODUCT_COPY_FILES += \
-       $(LOCAL_PATH)/configs/etc/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml \
-       $(LOCAL_PATH)/configs/etc/audio_policy.conf:system/etc/audio_policy.conf
+    $(LOCAL_PATH)/configs/etc/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml \
+    $(LOCAL_PATH)/configs/etc/audio_policy.conf:system/etc/audio_policy.conf
 
 # International variants have proximity sensor
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
+
+PRODUCT_PACKAGES += \
+    libsecril-client
