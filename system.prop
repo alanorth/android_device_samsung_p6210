@@ -5,6 +5,3 @@ keyguard.no_require_sim=true
 ro.carrier=wifi-only
 # mdpi
 ro.sf.lcd_density=160
-
-# screen rotation for surfaceflinger
-ro.sf.hwrotation=270
